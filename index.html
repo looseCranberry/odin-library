@@ -4,190 +4,71 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
 		<title>Odin's Library</title>
-		<style>
-			@font-face {
-				font-family: "Klee One";
-				src: url(KleeOne-Regular.ttf);
-			}
-			@font-face {
-				font-family: "Zilla Slab";
-				src: url(ZillaSlab-Light.ttf);
-			}
-			a {
-				margin: 0;
-				padding: 0;
-				display: block;
-				text-decoration: none;
-			}
-			body {
-				margin: 0;
-				padding: 0;
-				padding-bottom: 48px;
-				color: rgb(240, 240, 240);
-				background-color: rgb(100, 100, 100);
-				background: url(BGD.jpg) no-repeat center fixed;
-				background-size: cover;
-			}
-			body > header {
-				width: 100vw;
-				height: 68px;
-				padding: 16px 0;
-				margin-bottom: 16px;
-				text-align: center;
-				background-color: rgba(0, 0, 0, 0.7);
-			}
-			body > footer {
-				position: fixed;
-				left: 0;
-				bottom: 0;
-				height: 32px;
-				width: 100vw;
-				padding-top: 16px;
-				text-align: center;
-				background-color: rgba(0, 0, 0, 0.7);
-			}
-			body > header > h1 {
-				margin: 0;
-				padding: 0;
-				font-size: 42px;
-				font-weight: 700;
-				letter-spacing: 8px;
-				font-family: "Zilla Slab";
-			}
-			article {
-				width: 375px;
-				height: 320px;
-				margin: 8px 16px;
-				padding: 0;
-				box-sizing: border-box;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				background-color: rgba(0, 0, 0, 0.7);
-				border: 3px solid rgb(149, 82, 81);
-			}
-			article > header,
-			article > footer {
-				font-family: "Zilla Slab";
-				text-align: center;
-			}
-			article > header {
-				color: rgb(240, 240, 240);
-				background-color: rgb(155, 35, 53);
-			}
-			article > header > h1 {
-				font-size: 16px;
-				margin: 0;
-				padding: 8px 4px;
-			}
-			article > footer > h3 {
-				margin: 0;
-				padding: 8px 4px;
-			}
-			article > section {
-				font-size: 12px;
-				font-weight: 600;
-				font-family: "Klee One";
-				margin: 0;
-				padding: 4px 16px;
-			}
-			section > div > ul {
-				margin: 6px 24px;
-				padding: 0;
-				height: 190px;
-				list-style-type: none;
-			}
-			section > div > ul > li {
-				margin: 4px;
-			}
-			section > div > ul > li > h2 {
-				margin: 0;
-				padding: 0;
-			}
-			section > div > h3 {
-				align-self: flex-end;
-				margin: 0;
-				padding: 0;
-				color: yellow;
-			}
-			.read {
-				color: rgb(240, 240, 240);
-				background-color: rgb(136, 176, 75);
-			}
-			.notread {
-				color: rgb(240, 240, 240);
-				background-color: rgb(225, 93, 68);
-			}
-			.flexed {
-				display: flex;
-			}
-			.columned {
-				flex-direction: column;
-			}
-			.wrapped {
-				flex-wrap: wrap;
-			}
-			.bottom-row {
-				justify-self: stretch;
-			}
-			.newbook > section {
-				display: flex;
-				justify-content: center;
-			}
-		</style>
 	</head>
 	<body>
-		<header>
-			<h1>Odin's Library</h1>
-		</header>
-		<main class="flexed wrapped">
-			<article>
-				<header><h1>Dracula</h1></header>
-				<section class="flexed">
-					<div>
-						<img src="Book.dracula.jpg" height="220px" width="auto" />
-					</div>
-					<div class="flexed columned">
-						<ul>
-							<li><h2>Bram Stoker</h2></li>
-							<li>512 Pages</li>
-							<li>Fiction, Fantasy, Horror</li>
-							<li>ISBN:0593203380</li>
-						</ul>
-						<h3>4.8 &star;</h3>
-					</div>
-				</section>
-				<footer class="read"><h3>Is Read?</h3></footer>
-			</article>
-			<article>
-				<header><h1>Steve Jobs</h1></header>
-				<section class="flexed">
-					<div>
-						<img src="Book.sj.jpg" height="220px" width="auto" />
-					</div>
-					<div class="flexed columned">
-						<ul>
-							<li><h2>Walter Isaacson</h2></li>
-							<li>512 Pages</li>
-							<li>Fiction, Fantasy, Horror</li>
-							<li>ISBN:0593203380</li>
-						</ul>
-						<h3>4.8 &star;</h3>
-					</div>
-				</section>
-				<footer class="notread"><h3>Is Not Read?</h3></footer>
-			</article>
-			<article class="newbook">
-				<header><h1>Add</h1></header>
+		<header></header>
+		<main>
+			<article class="book">
+				<header><h1>Book Title Right Here</h1></header>
 				<section>
-					<a href="#">
-						<img src="Book.New.png" height="220px" width="auto" />
-					</a>
+					<img src="Book.dune.jpg" width="auto" height="220px" />
+					<div>
+						<ul>
+							<li><h2>Book Author Here</h2></li>
+							<li>12,654 Pages</li>
+							<li>ISBN: 014213155</li>
+							<li>Fiction, Autobiography</li>
+						</ul>
+						<h3>4 &star;</h3>
+					</div>
 				</section>
-				<footer class="notread"><h3>New Book</h3></footer>
+				<footer class="read"><h3>Read</h3></footer>
+			</article>
+			<article id="new" class="menu new" onclick="menubuilder.display()">
+				<img src="Book.New.png" width="auto" height="220px" />
+				<h1>Add New Book</h1>
 			</article>
 		</main>
-		<footer>Copyright &copy; 2021 looseCranberry</footer>
+		<footer></footer>
 	</body>
+	<!-- Book Template ------------------------------------------------------ -->
+	<template id="bookTmp">
+		<article class="book">
+			<header><h1></h1></header>
+			<section>
+				<img src="" width="" height="" />
+				<div>
+					<ul></ul>
+					<h3></h3>
+				</div>
+			</section>
+			<footer class="read|unread"><h3></h3></footer>
+		</article>
+	</template>
+	<!-- Menu Template ------------------------------------------------------ -->
+	<template id="menuTmp">
+		<header><input type="text" placeholder="Title" /></header>
+		<section>
+			<input type="text" placeholder="Cover Link" />
+			<input type="text" placeholder="Book Author" />
+			<div>
+				<div class="grouper">
+					<input type="text" placeholder="Page Count" />
+					<input type="text" placeholder="ISBN-10" />
+					<div>
+						<span class="star idx0">&star;</span>
+						<span class="star idx1">&star;</span>
+						<span class="star idx2">&star;</span>
+						<span class="star idx3">&star;</span>
+						<span class="star idx4">&star;</span>
+					</div>
+				</div>
+			</div>
+			<div class="genre-container"></div>
+		</section>
+		<footer><button>Save Button</button></footer>
+	</template>
 </html>
